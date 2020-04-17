@@ -1,10 +1,14 @@
 <table>
+<thead>
   <tr>
     <th>Title</th>
     <th>Artist</th>
     <th>Release Date</th>
     <th>Genre</th>
   </tr>
+</thead>
+
+<tbody>
 <%@songs.each do |song|%>
   <tr>
     <td><%=song.title%></td>
