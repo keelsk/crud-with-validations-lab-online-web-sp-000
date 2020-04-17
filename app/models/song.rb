@@ -9,7 +9,7 @@ class Song < ApplicationRecord
 
   private
   def released_exists?
-    self.released==true
+    self.released==false
   end
 
   # def once_a_year
