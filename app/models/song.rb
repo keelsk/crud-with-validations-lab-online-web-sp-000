@@ -12,12 +12,12 @@ class Song < ApplicationRecord
     self.released==true
   end
 
-  def once_a_year
-    @copy = Song.find_by_title(title)
-    if @copy
-      if (@copy.artist_name == artist_name) && (@copy.release_year == release_year)
-        errors[:base] << "Artist cannot release the same song in one year!"
-      end
-    end
-  end
+  # def once_a_year
+  #   @copy = Song.find_by_title(title)
+  #   if @copy
+  #     if (@copy.artist_name == artist_name) && (@copy.release_year == release_year)
+  #       errors[:base] << "Artist cannot release the same song in one year!"
+  #     end
+  #   end
+  # end
 end
