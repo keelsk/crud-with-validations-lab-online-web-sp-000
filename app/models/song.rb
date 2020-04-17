@@ -15,6 +15,6 @@ class Song < ApplicationRecord
 
   private
   def released_exists?
-    :released
+    released
   end
 end
